@@ -12,7 +12,7 @@
 .bg{
     width: 100%;
     min-height: 100vh;
-    background-image: url('https://images2.alphacoders.com/135/1351108.png');
+    background-image: url('../public/bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
