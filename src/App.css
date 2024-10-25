@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+#icon{
+    font-size: 16px;
+    position: absolute;
+    top: 31px;
+    right: 248px;
+}
+.bg{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://images2.alphacoders.com/135/1351108.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:576px) {
+    #icon{
+        right: 187px;
+        top: 27px;
+    }
+}
