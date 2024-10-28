@@ -2,7 +2,8 @@ import React from 'react'
 import useFetch from './useFetch'
 
 const Weather = ({city}) => {
-    const { data, loading, error } = useFetch(city?`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8ac5c4d57ba6a4b3dfcf622700447b1e&units=metric`:null)
+    const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+    const { data, loading, error } = useFetch(city?`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`:null)
 
     if(loading)return <h2>Loading...</h2>
     if(error)return <h2>Error: {error}</h2>
